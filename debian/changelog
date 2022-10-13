@@ -1,0 +1,58 @@
+node-imports-loader (0.8.0-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * source only upload to enable migration
+
+ -- Paul Gevers <elbrus@debian.org>  Mon, 01 Nov 2021 21:03:40 +0100
+
+node-imports-loader (0.8.0-4) unstable; urgency=medium
+
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-loader-utils and
+      node-source-map.
+    + node-imports-loader: Drop versioned constraint on node-loader-utils and
+      node-source-map in Depends.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Wed, 15 Sep 2021 08:59:04 +0100
+
+node-imports-loader (0.8.0-3) unstable; urgency=medium
+
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 29 Aug 2021 02:32:12 +0100
+
+node-imports-loader (0.8.0-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Update dependency versions
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Switch to pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 08 Aug 2019 13:07:48 +0000
+
+node-imports-loader (0.8.0-1) experimental; urgency=medium
+
+  [ Jelmer Vernooĳ ]
+  * Use secure copyright file specification URI.
+
+  [ Pirate Praveen ]
+  * New upstream version 0.8.0
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * Change section to javascript
+  * Switch to pkg-js-tools for tests
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 17 Jun 2019 17:14:17 +0530
+
+node-imports-loader (0.7.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #875866)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 15 Sep 2017 17:17:06 +0530
