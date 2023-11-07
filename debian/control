@@ -5,25 +5,25 @@ Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.deb
 Uploaders: Pirate Praveen <praveen@debian.org>
 Build-Depends:
  debhelper-compat (= 13)
- , nodejs
- , pkg-js-tools (>= 0.8.10~)
- , mocha
- , node-should
- , node-source-map
- , node-loader-utils
-Standards-Version: 4.5.1
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-should <!nocheck>
+ , node-source-map <!nocheck>
+ , node-loader-utils <!nocheck>
+Standards-Version: 4.6.0
 Homepage: https://github.com/webpack/imports-loader#readme
 Vcs-Git: https://salsa.debian.org/js-team/node-imports-loader.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-imports-loader
 Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-imports-loader
 Architecture: all
 Depends:
  ${misc:Depends}
- , nodejs
  , node-source-map
  , node-loader-utils
+Multi-Arch: foreign
 Description: imports loader module for webpack
  The imports loader allows you to use modules that depend on specific global
  variables.
